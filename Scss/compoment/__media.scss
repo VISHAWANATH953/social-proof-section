@@ -1,0 +1,65 @@
+@media screen and(max-width:762px) {
+    html{
+        font-size: 90%;
+    }
+    .header{
+        width: 90% !important;
+        text-align: center !important;
+        padding: 2.5rem !important;
+        p{
+            margin-top: 1rem;
+        }
+    }
+    .one{
+        margin-top: 1rem !important;
+        width: 100% !important;
+        height: 100vh !important;
+        align-items: center !important;
+        justify-content: center !important;
+        
+        .stars{
+            width: 100% !important; 
+            align-items: center !important;
+            justify-content: center !important;
+            p{
+                margin: 1.5rem 0 !important;
+                width: 90% !important;
+                border-radius: 0.5rem !important;
+                vertical-align: middle !important;
+                justify-content: center !important;
+                .first,.last{
+                    margin: 0 !important;
+                }
+                width: 90% !important;
+                margin:0 !important;
+                height: 3.5rem !important;
+            }
+            p.one,p.two,p.three{
+                margin: .5rem !important;
+            }
+        }
+    }
+    div.two{
+        margin: .5rem auto !important;
+        width: 100% !important;
+        height: 150vh !important;
+        justify-content: center !important;
+        .cards-card{
+            margin: .5rem !important;
+            padding: 1rem !important;
+            width: 90% !important;
+            height: 18rem !important;
+            .card-info{
+                justify-content: flex-start !important;
+                .img{
+                    justify-self: flex-start !important;
+                    margin: 1rem 0 0 0 !important;
+                }
+                span{
+                    margin-top: .5rem !important;
+                }
+            }
+
+        }
+    }
+}

@@ -1,0 +1,108 @@
+@import 'compoment/_var';
+@import 'compoment/_utility';
+    .header{
+        width: 32.5%;
+    }
+    .one{
+        margin-top: 5rem;
+        width: 78%;
+        height: 50vh;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-flow: row wrap;
+        .header{
+            // width: 32.5%;
+            color: $DarkMagenta;
+            h1{
+                font-weight: 700;
+            }
+            p{
+                font-weight: 300;
+            }
+        }
+        .stars{
+            width: 50%;
+            display: flex;
+            flex-flow: column nowrap;
+            p{
+                border-radius: 0.5rem;
+                vertical-align: middle;
+                justify-content: flex-start;
+                align-items: center;
+                display: flex;
+                flex-flow: row nowrap;
+                .first{
+                    margin-left: 1rem;
+                }
+                .last{
+                    margin-right: 0.5rem;
+                }
+                img{
+                    width: initial;
+                    height: initial;
+                    margin: 0 .25rem;
+                }
+                width: 25rem;
+                margin: 1rem 0 0;
+                height: 2.5rem;
+                background:$LightGrayishMagenta;
+                color: $DarkMagenta;
+                ::before{
+                    content: icon('/images/icon-star.svg');
+                }
+            }
+            p.two{
+                margin-left: 3rem;
+            }
+            p.three{
+                margin-left: 6rem;
+            }
+        }
+        
+    }
+    .two{
+        p,.name{
+            color: #fff;
+        }
+        margin: 0 auto;
+        width: 80%;
+        height: 50vh;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-around;
+        .cards-card{
+            text-align: justify;
+            padding: 2rem;
+            width: 20.5rem;
+            height: 15rem;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            .span{
+                margin: 1rem;
+                display: flex;
+                flex-flow: column nowrap;
+            .about{
+                color: $SoftPink;
+            }
+            }
+            background: $DarkMagenta;
+            border-radius: .5rem;
+            .card-info{
+                display: flex;
+                
+                flex-flow: row nowrap;
+                justify-content: center;
+                .img{
+                    margin: .2rem 0 .3rem -5rem;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    width: 3.5rem;
+                    height: 3.55rem;
+                }
+            }
+        }
+    }
+@import 'compoment/_media';

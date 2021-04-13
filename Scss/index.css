@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'Spartan', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  background: rgba(255, 255, 255, 0.178);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  width: 32.5%;
+}
+
+.one {
+  margin-top: 5rem;
+  width: 78%;
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.one .header {
+  color: #502050;
+}
+
+.one .header h1 {
+  font-weight: 700;
+}
+
+.one .header p {
+  font-weight: 300;
+}
+
+.one .stars {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
+.one .stars p {
+  border-radius: 0.5rem;
+  vertical-align: middle;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  width: 25rem;
+  margin: 1rem 0 0;
+  height: 2.5rem;
+  background: #f7f2f7;
+  color: #502050;
+}
+
+.one .stars p .first {
+  margin-left: 1rem;
+}
+
+.one .stars p .last {
+  margin-right: 0.5rem;
+}
+
+.one .stars p img {
+  width: initial;
+  height: initial;
+  margin: 0 .25rem;
+}
+
+.one .stars p ::before {
+  content: icon("/images/icon-star.svg");
+}
+
+.one .stars p.two {
+  margin-left: 3rem;
+}
+
+.one .stars p.three {
+  margin-left: 6rem;
+}
+
+.two {
+  margin: 0 auto;
+  width: 80%;
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.two p, .two .name {
+  color: #fff;
+}
+
+.two .cards-card {
+  text-align: justify;
+  padding: 2rem;
+  width: 20.5rem;
+  height: 15rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #502050;
+  border-radius: .5rem;
+}
+
+.two .cards-card .span {
+  margin: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
+.two .cards-card .span .about {
+  color: #ee68a4;
+}
+
+.two .cards-card .card-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.two .cards-card .card-info .img {
+  margin: .2rem 0 .3rem -5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 3.5rem;
+  height: 3.55rem;
+}
+
+@media screen and (max-width: 762px) {
+  html {
+    font-size: 90%;
+  }
+  .header {
+    width: 90% !important;
+    text-align: center !important;
+    padding: 2.5rem !important;
+  }
+  .header p {
+    margin-top: 1rem;
+  }
+  .one {
+    margin-top: 1rem !important;
+    width: 100% !important;
+    height: 100vh !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .one .stars {
+    width: 100% !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .one .stars p {
+    margin: 1.5rem 0 !important;
+    width: 90% !important;
+    border-radius: 0.5rem !important;
+    vertical-align: middle !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    width: 90% !important;
+    margin: 0 !important;
+    height: 3.5rem !important;
+  }
+  .one .stars p .first, .one .stars p .last {
+    margin: 0 !important;
+  }
+  .one .stars p.one, .one .stars p.two, .one .stars p.three {
+    margin: .5rem !important;
+  }
+  div.two {
+    margin: .5rem auto !important;
+    width: 100% !important;
+    height: 150vh !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  div.two .cards-card {
+    margin: .5rem !important;
+    padding: 1rem !important;
+    width: 90% !important;
+    height: 18rem !important;
+  }
+  div.two .cards-card .card-info {
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
+  }
+  div.two .cards-card .card-info .img {
+    justify-self: flex-start !important;
+    margin: 1rem 0 0 0 !important;
+  }
+  div.two .cards-card .card-info span {
+    margin-top: .5rem !important;
+  }
+}
+/*# sourceMappingURL=index.css.map */
